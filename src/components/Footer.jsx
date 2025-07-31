@@ -11,7 +11,7 @@ const Footer = () => {
           <span className="text-xs text-orange-200">Buenos Aires, Argentina</span>
         </div>
         <div className="flex flex-col items-center gap-1">
-          <a href="mailto:tunkifit@gmail.com" className="hover:underline text-orange-100 text-sm">juancruzises@gmail.com</a>
+          <a href="mailto:juancruzises@gmail.com" className="hover:underline text-orange-100 text-sm">juancruzises@gmail.com</a>
           <a href="https://wa.me/541123883960" target="_blank" rel="noopener noreferrer" className="hover:underline text-orange-100 text-sm">+54 11 2388-3960</a>
           <div className="flex gap-3 mt-2">
             <a href="https://www.instagram.com/juancruz.ises/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-orange-300 transition-colors">
@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='w-full'>
-        <p className='m-0 bg-black text-white items-center justify-center w-full flex'>© {new Date().getFullYear()} | <img className='w-[60px]' src={'/images/logo512.png'} alt="Logo Enhance"></img></p>
+        <p className='m-0 bg-black text-white items-center justify-center w-full flex'>© {new Date().getFullYear()} | <a target='_blank' href='https://presentacionjc-juan-cruz-ises-projects.vercel.app/'><img className='w-[60px]' src={'/images/logo512.png'} alt="Logo Enhance"></img></a></p>
       </div>
     </footer>
   );
