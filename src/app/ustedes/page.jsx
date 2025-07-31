@@ -1,10 +1,7 @@
-"use client"
-import React, { useState } from 'react';
+import React from 'react';
 import WhatsAppButton from '../../components/WhatsAppButton';
 
 function Testimonios() {
-  const [expand, setExpand] = useState(false);
-
   const alumnos = [
     { nombre: "Vicky", edad: 28 },
     { nombre: "Tomi", edad: 18 },
@@ -43,45 +40,13 @@ function Testimonios() {
       <section>
         <h2 className="text-2xl font-bold text-orange-900 mb-4 text-center">SEGUIMIENTO DE ALUMNOS</h2>
         <div className="w-full flex justify-center my-8">
-          {/* Contenedor responsive y expandible */}
-          <div
-            className={`w-full max-w-3xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-lg transition-all duration-300 cursor-pointer relative
-              ${expand ? 'fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center !rounded-none !max-w-none !aspect-auto' : ''}
-            `}
-            onClick={() => {
-              if (!expand && window.innerWidth < 1024) setExpand(true);
-            }}
-            style={expand ? { padding: 0 } : {}}
-          >
-            {/* Botón de cierre solo en modo expandido */}
-            {expand && (
-              <button
-                onClick={e => {
-                  e.stopPropagation();
-                  setExpand(false);
-                }}
-                className="absolute top-4 right-4 z-50 bg-white/80 hover:bg-white text-orange-900 rounded-full p-2 shadow-lg transition"
-                aria-label="Cerrar"
-              >
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-                  <path d="M18 6L6 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                  <path d="M6 6L18 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                </svg>
-              </button>
-            )}
+          <div className="w-full max-w-3xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-lg">
             <iframe
               title="Resultados - Looker Studio"
               src="https://lookerstudio.google.com/embed/reporting/92a5e064-9a3a-46e7-85a8-c283d2c8fcb2/page/page_12345"
               width="100%"
-              height={expand ? "100%" : "auto"}
-              style={{
-                border: 0,
-                borderRadius: expand ? 0 : '16px',
-                minHeight: expand ? '100vh' : 400,
-                height: expand ? '100vh' : "auto",
-                maxWidth: expand ? '100vw' : 900,
-                background: "#fff"
-              }}
+              height="auto"
+              style={{ border: 0, borderRadius: '16px', minHeight: 400, height: "auto", maxWidth: 900 }}
               allowFullScreen
             ></iframe>
           </div>
@@ -103,9 +68,28 @@ function Testimonios() {
         </div>
         </section>
       </section>
+      {/* <section>
+        <div>
+          <h2 className="text-xl font-bold text-orange-900 mb-4 text-center">Testimonios</h2>
+          <section className="flex flex-col gap-6 max-w-2xl mx-auto">
+            <blockquote className="bg-white rounded-xl shadow p-6 text-orange-800 italic border-l-4 border-orange-400">
+              "Nunca pensé que cumplir una rutina a distancia me iba a motivar tanto."
+              <span className="block mt-2 font-semibold">– Vicky</span>
+            </blockquote>
+          </section>
+        </div>
+      </section> */}
+        {/* <div className="bg-white rounded-xl shadow p-6 flex flex-col gap-2">
+          <h2 className="font-semibold mb-2">Cumplimiento semanal</h2>
+          <div className="flex flex-col gap-1">
+            <div className="flex justify-between"><span>Lucas</span><span className="font-bold">100%</span></div>
+            <div className="flex justify-between"><span>Gino</span><span className="font-bold">80%</span></div>
+            <div className="flex justify-between"><span>Tomas</span><span className="font-bold">90%</span></div>
+          </div>
+        </div> */}
+      
       <WhatsAppButton />
-    </div>
-  );
+    </div>);
 }
 
 export default Testimonios;
