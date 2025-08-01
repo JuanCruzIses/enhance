@@ -40,8 +40,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <head>
-        {/* El path correcto para Next.js es SIN /public */}
-        <link rel="icon" href="/images/logo.png" type="image/png" />
+        <link rel="icon" href="/logo.ico" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
