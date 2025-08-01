@@ -1,11 +1,11 @@
-"use client";
-import React, { useState } from 'react';
+"use client"
+import React from 'react';
 import Link from 'next/link';
-import StartFormModal from '../components/StartFormModal';
 import WhatsAppButton from '../components/WhatsAppButton';
+import CountdownModal from '@/components/CountdownModal';
+
 
 function Home() {
-  const [modalOpen, setModalOpen] = useState(false);
   return (
     <>
       <div className="w-full max-w-xl flex flex-col items-center gap-6">
@@ -22,6 +22,7 @@ function Home() {
           Conoce el sistema
         </Link>
       </div>
+      <CountdownModal/>
       <WhatsAppButton />
     </>
   );

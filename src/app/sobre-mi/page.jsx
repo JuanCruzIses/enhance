@@ -1,7 +1,8 @@
-
+"use client"
 import React from 'react';
-import Header from '../../components/Header';
 import Image from 'next/image';
+
+
 
 function SobreMi() {
   return (
