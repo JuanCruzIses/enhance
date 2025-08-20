@@ -29,6 +29,7 @@ export default function RootLayout({ children }) {
       "/preguntas-frecuentes": "Preguntas frecuentes",
       "/contacto": "Contacto",
       "/asesoria": "Asesoría",
+      "/ejercicios": "Ejercicios",
     };
     return `Enhance - ${pageName[pathname] || "Página"}`;
   };

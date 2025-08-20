@@ -3,7 +3,8 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 const navLinks = [
-  { href: '/asesoria', label: '¿Qué incluye la asesoría?' },
+  { href: '/asesoria', label: 'Asesoría' },
+  { href: '/ejercicios', label: 'Ejercicios' },
   { href: '/ustedes', label: 'Ustedes' },
   { href: '/sobre-mi', label: 'Sobre mí' },
   { href: '/preguntas-frecuentes', label: 'FAQs' },

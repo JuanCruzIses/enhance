@@ -2,7 +2,6 @@
 import React from 'react';
 import Link from 'next/link';
 import WhatsAppButton from '../components/WhatsAppButton';
-import CountdownModal from '@/components/CountdownModal';
 
 
 function Home() {
@@ -22,7 +21,6 @@ function Home() {
           Conoce el sistema
         </Link>
       </div>
-      <CountdownModal/>
       <WhatsAppButton />
     </>
   );
