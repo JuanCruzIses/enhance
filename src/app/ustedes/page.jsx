@@ -16,6 +16,7 @@ function Testimonios() {
     { nombre: "Gino", edad: 22 },
     { nombre: "Emi", edad: 35 },
     { nombre: "Rodrigo", edad: 26 },
+    { nombre: "Pablo", edad: 39 },
   ];
 
   return (

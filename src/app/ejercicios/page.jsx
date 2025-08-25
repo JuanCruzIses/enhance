@@ -35,7 +35,9 @@ function Page() {
     if (usos !== null) {
       const restantes = 5 - parseInt(usos, 10);
       setUsosRestantes(restantes > 0 ? restantes : 0);
-      if (restantes <= 0) setBloqueado(true);
+      if (restantes <= 0){
+        setBloqueado(true);
+      } 
     }
   }, []);
 

@@ -1,8 +1,27 @@
-import generarRutina from '@/components/GenerarRutina';
+import { ejerciciosPorCategoria } from '@/utils/ejerciciosData';
 
-const handleRutina = (seleccionadas) => {
-    const rutina = generarRutina(seleccionadas);
-    // Abrir rutina en nueva pestaña
+// Función para obtener N elementos aleatorios de un array
+function getRandomItems(arr, n) {
+  if (!Array.isArray(arr)) return [];
+  const shuffled = arr.slice().sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, n);
+}
+
+const handleRutina = (data) => {
+    const { seleccionadas, repeticiones, series, tipoEntrenamiento, volumenEntrenamiento } = data;
+    const rutina = Array.isArray(seleccionadas) ? seleccionadas.map(cat => {
+      const clave = cat
+        .normalize('NFD')
+        .replace(/\p{Diacritic}/gu, '')
+        .replace(/ /g, '')
+        .toLowerCase();
+      const ejercicios = ejerciciosPorCategoria[clave];
+      return {
+        categoria: cat,
+        ejercicios: getRandomItems(ejercicios, 3),
+      };
+    }) : [];
+
     const rutinaHtml = `
       <html>
         <head>
@@ -15,8 +34,30 @@ const handleRutina = (seleccionadas) => {
               Rutina sugerida para hoy
             </h1>
             <p style="color: #92400e; text-align: center; max-width: 500px; margin: 0 auto 24px;">
-              <span style="font-weight:600; color:#ea580c;">Tip:</span> ¡Haz una captura de pantalla para tener tu rutina a mano durante el entrenamiento!
+              Recorda realizar una buena entrada en calor previamente, activando los grupos musculares que vayas a entrenar.
             </p>
+            <section style="background: #fff; border-radius: 16px; box-shadow: 0 2px 12px rgba(251,146,60,0.10); padding: 24px; margin-bottom: 32px;">
+              <div>
+                <p style="color: #b45309; font-size: 1.1rem; font-weight: bold; margin-bottom: 6px;">Grupos musculares a entrenar:</p>
+                <p style="color: #92400e; margin-bottom: 12px;">
+                  ${Array.isArray(seleccionadas) && seleccionadas.length > 0 ? seleccionadas.join(', ') : 'No seleccionado'}
+                </p>
+              </div>
+              <hr style="border: none; border-top: 2px solid #b453098c; margin: 18px 0;" />
+              <div>
+                <p style="color: #b45309; font-size: 1.1rem; font-weight: bold; margin-bottom: 6px;">Volumen de entrenamiento:</p>
+                <p style="color: #92400e; margin-bottom: 12px;">
+                  ${volumenEntrenamiento ? volumenEntrenamiento : 'No seleccionado'} (${series} series)
+                </p>
+              </div>
+              <hr style="border: none; border-top: 2px solid #b453098c; margin: 18px 0;" />
+              <div>
+                <p style="color: #b45309; font-size: 1.1rem; font-weight: bold; margin-bottom: 6px;">Intensidad de entrenamiento:</p>
+                <p style="color: #92400e; margin-bottom: 12px;">
+                  ${tipoEntrenamiento ? tipoEntrenamiento : 'No seleccionado'} (${repeticiones} repeticiones)
+                </p>
+              </div>
+            </section>
             <div style="width:100%; display:flex; flex-direction:column; gap:32px;">
               ${rutina.map(bloque => `
                 <div style="background: #fff; border-radius: 16px; box-shadow: 0 2px 12px rgba(251,146,60,0.10); padding: 24px;">
@@ -29,7 +70,7 @@ const handleRutina = (seleccionadas) => {
                         <div style="flex:1;">
                           <span style="font-weight:600; color:#ea580c;">${ej.nombre}</span>
                           <span style="display:block; font-size:0.98rem; color:#92400e;">${ej.descripcion}</span>
-                          <span style="display:block; font-size:0.85rem; color:#ea580c;">3 series x 10 repeticiones</span>
+                          <span style="display:block; font-size:0.85rem; color:#ea580c;">${series} series x ${repeticiones} repeticiones</span>
                         </div>
                         ${ej.src ? `
                           <div style="margin-left:16px; min-width:140px; max-width:180px;">
@@ -58,6 +99,6 @@ const handleRutina = (seleccionadas) => {
     const win = window.open('', '_blank');
     win.document.write(rutinaHtml);
     win.document.close();
-  };
+};
 
 export default handleRutina;

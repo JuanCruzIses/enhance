@@ -364,12 +364,20 @@ export const ejerciciosPorCategoria = {
   ],
   espalda: [
     {
-      nombre: "Remo con barra",
-      descripcion: "Flexión de rodillas y torso inclinado, tirar barra al ombligo.",
+      nombre: "Remo con barra (Toma prona)",
+      descripcion: "Flexión de rodillas y torso inclinado, tirar barra al ombligo, palmas de la mano hacía atras.",
       material: "Barra con discos.",
       errores: "Espalda redonda, impulso con cadera.",
       video: "Barbell Bent Over Row Form",
-      src: "https://www.youtube.com/embed/VIDEO_ID_ROW"
+      src: "https://www.youtube.com/embed/9Gf-Ourup_k?si=FoB5l5fWzc94rC77"
+    },
+    {
+      nombre: "Remo con barra (Toma supina)",
+      descripcion: "Flexión de rodillas y torso inclinado, tirar barra al ombligo, palmas de la mano hacía adelante.",
+      material: "Barra con discos.",
+      errores: "Espalda redonda, impulso con cadera.",
+      video: "Barbell row",
+      src: "https://www.youtube.com/embed/11LHA6_C6u8?si=QwcoFpmRpZdx2QJc"
     },
     {
       nombre: "Remo con mancuerna a un brazo",
@@ -377,23 +385,31 @@ export const ejerciciosPorCategoria = {
       material: "Mancuerna y banco.",
       errores: "Hombros en rotación, tronco inestable.",
       video: "One Arm Dumbbell Row",
-      src: "https://www.youtube.com/embed/VIDEO_ID_ONE_ARM_ROW"
+      src: "https://www.youtube.com/embed/xl1YiqQY2vA?si=Iz-MXRsTZ1UTSpOX"
     },
     {
-      nombre: "Pull-up",
+      nombre: "Pull-up / Dominada (Toma prona)",
       descripcion: "Jalón completo de la barra con agarre prono, subir hasta mentón.",
       material: "Barra fija.",
       errores: "Balanceo, no bajar completamente.",
       video: "Proper Pull Up Form",
-      src: "https://www.youtube.com/embed/VIDEO_ID_PULL_UP"
+      src: "https://www.youtube.com/embed/aAggnpPyR6E?si=pjNXsuG4TedP8WUf"
     },
     {
-      nombre: "Chin-up",
+      nombre: "Chin-up / Dominada (Toma supina)",
       descripcion: "Similar al pull-up pero agarre supino.",
       material: "Barra fija.",
       errores: "Balanceo, brazos incompletos.",
       video: "Chin Up Technique",
-      src: "https://www.youtube.com/embed/VIDEO_ID_CHIN_UP"
+      src: "https://www.youtube.com/embed/8mryJ3w2S78?si=_BNjJmdiP7UGgZuD"
+    },
+    {
+      nombre: "Negative Chin-up / Dominada negativa (Toma supina)",
+      descripcion: "Se trabaja únicamente la fase negativa del Chin-up, buscando controlar la bajda lo más despacio posible.",
+      material: "Barra fija.",
+      errores: "Balanceo, brazos incompletos.",
+      video: "Negative Chin Up Technique",
+      src: "https://www.youtube.com/embed/EkpJkHpJXmM?si=Uc4B3oGGhOp8xLyp"
     },
     {
       nombre: "Remo invertido",
@@ -401,89 +417,160 @@ export const ejerciciosPorCategoria = {
       material: "Barra baja o suspensión.",
       errores: "Cadera baja, espalda arqueada.",
       video: "Inverted Row Tutorial",
-      src: "https://www.youtube.com/embed/VIDEO_ID_INVERTED_ROW"
+      src: "https://www.youtube.com/embed/ngRFqLf6flU?si=k9OhPgWy2JOx5ZmM"
     },
     {
-      nombre: "Peso muerto rumano",
-      descripcion: "Flexión de cadera, espalda recta, bajar hasta media pierna.",
-      material: "Barra o mancuernas.",
-      errores: "Flexionar rodillas, curvar la espalda.",
-      video: "Romanian Deadlift Proper Form",
-      src: "https://www.youtube.com/embed/VIDEO_ID_RDL"
+      nombre: "Peso Muerto Rumano con Barra",
+      descripcion: "Movimiento de cadera manteniendo rodillas semiflexionadas para trabajar isquiotibiales y glúteos.",
+      material: "Barra y discos",
+      src: "https://www.youtube.com/embed/watch?v=2SHsk9AzdjA",
+      errores: ["Redondear la espalda", "Perder tensión abdominal", "Bajar demasiado rápido"]
     },
     {
-      nombre: "Jalón al pecho en polea",
+      nombre: "Jalón al pecho en polea (Toma prona)",
       descripcion: "Tirar barra hacia la zona clavicular manteniendo torso estable.",
       material: "Polea alta.",
       errores: "Inclinar el torso, empujar con espalda baja.",
       video: "Lat Pulldown Correct Form",
-      src: "https://www.youtube.com/embed/VIDEO_ID_LATS"
+      src: "https://www.youtube.com/embed/55X8yLezpwc?si=v4RbwWzUMyE2qO69"
+    },
+    {
+      nombre: "Jalón al pecho en polea (Toma supina)",
+      descripcion: "Tirar barra hacia la zona clavicular manteniendo torso estable.",
+      material: "Polea alta.",
+      errores: "Inclinar el torso, empujar con espalda baja.",
+      video: "Lat Pulldown Correct Form",
+      src: "https://www.youtube.com/embed/cwN6QVwXTgQ?si=APkrI7Us1_hIU1DS"
+    },
+    {
+      nombre: "Jalón al pecho en polea (Toma neutra)",
+      descripcion: "Tirar barra hacia la zona clavicular manteniendo torso estable.",
+      material: "Polea alta.",
+      errores: "Inclinar el torso, empujar con espalda baja.",
+      video: "Lat Pulldown Correct Form",
+      src: "https://www.youtube.com/embed/Dzo55VafAnw?si=2_GeEikG1bRdC9Pq"
     },
     {
       nombre: "Pull over con mancuerna",
       descripcion: "Acostado, llevar mancuerna por encima y atrás de cabeza.",
       material: "Mancuerna y banco.",
-      errores: "Arch más allá de lo cómodo, usar espalda para empujar.",
+      errores: "Arquear en exceso la espalda, flexionar los codos.",
       video: "Dumbbell Pullover Tutorial",
-      src: "https://www.youtube.com/embed/VIDEO_ID_PULL_OVER"
+      src: "https://www.youtube.com/embed/jQjWlIwG4sI?si=OpQ_rMFEUXVF9WGV"
+    },
+    {
+      nombre: "Pull over en polea alta",
+      descripcion: "De pie, tirar de la cuerda hacia abajo y atrás, manteniendo codos fijos.",
+      material: "Polea alta.",
+      errores: "Arquear en exceso la espalda, flexionar los codos.",
+      video: "Dumbbell Pullover Tutorial",
+      src: "https://www.youtube.com/embed/Tl4npAbzI3Y?si=gp_yZ_Pjuzy-Segg"
     }
   ],
   pectoral: [
     {
-      nombre: "Press de banca",
-      descripcion: "Acostado en banco, bajar la barra al pecho y empujar explosivamente.",
+      nombre: "Press de banca con barra",
+      descripcion: "Acostado en banco, bajar la barra al pecho y empujar hasta extender por completo los codos.",
       material: "Barra con discos y banco.",
-      errores: "Rebote en pecho, arquear lumbar.",
+      errores: "Rebote en pecho, No completar la extensión de codos.",
       video: "Bench Press Technique",
-      src: "https://www.youtube.com/embed/VIDEO_ID_BENCH_PRESS"
+      src: "https://www.youtube.com/embed/i7L7Y9wMDSw?si=Jj4AJUX_MRxND-VO"
+    },
+    {
+      nombre: "Press de banca con mancuernas",
+      descripcion: "Acostado en banco, bajar las mancuernas hasta la línea del pecho y empujar hasta extender por completo los codos.",
+      material: "Mancuernas y banco.",
+      errores: "No flexionar completamente los codos, No completar la extensión de codos.",
+      video: "Bench Press Technique",
+      src: "https://www.youtube.com/embed/2DUKO1rdBH4?si=zwR7IxrZPhSvnYOc"
+    },
+    {
+      nombre: "Press inclinado con barra",
+      descripcion: "En banco inclinado, bajar la barra hasta tocar el pecho y luego empujar hacia arriba con control.",
+      material: "Banco inclinado y barra.",
+      errores: "No extender los codos, movimiento simétrico deficiente.",
+      video: "Incline Dumbbell Press Tutorial",
+      src: "https://www.youtube.com/embed/pLEPhBOifm4?si=czlK1DW8VVk1s-4B"
     },
     {
       nombre: "Press inclinado con mancuernas",
-      descripcion: "Banco inclinado, empujar mancuernas hacia arriba con control.",
+      descripcion: "En banco inclinado, bajar las mancuernas hasta la línea del pecho y luego empujar hacia arriba con control.",
       material: "Banco inclinado y mancuernas.",
       errores: "Separar brazos, movimiento simétrico deficiente.",
       video: "Incline Dumbbell Press Tutorial",
-      src: "https://www.youtube.com/embed/VIDEO_ID_INCLINE_DB_PRESS"
+      src: "https://www.youtube.com/embed/FGynaNs-0bU?si=JArSRGIMdOFMlwws"
     },
     {
-      nombre: "Press declinado con barra",
-      descripcion: "Banco declinado, empujar barra hacia arriba alineada con pecho bajo.",
-      material: "Banco declinado y barra.",
-      errores: "Levantar demasiado la cabeza, codos fuera de eje.",
+      nombre: "Press declinado en maquina Smith (Multipower)",
+      descripcion: "En banco declinado, bajar la barra hasta el pecho y luego empujar hacia arriba.",
+      material: "Banco declinado y maquina Smith.",
+      errores: "Levantar la cabeza, codos fuera de eje, No completar la extensión de codos.",
       video: "Decline Press Tutorial",
-      src: "https://www.youtube.com/embed/VIDEO_ID_DECLINE_PRESS"
+      src: "https://www.youtube.com/embed/HoKNBYmCUec?si=9JAwFI1uBKiK8K9V"
+    },
+    {
+      nombre: "Press declinado con mancuernas",
+      descripcion: "En banco declinado, bajar la mancuernas hasta el pecho y luego empujar hacia arriba.",
+      material: "Banco declinado y maquina Smith.",
+      errores: "Levantar la cabeza, codos fuera de eje, No completar la extensión de codos.",
+      video: "Decline Press Tutorial",
+      src: "https://www.youtube.com/embed/2uWdrii0ZG8?si=4TZDWwDg83LbLllU"
+    },
+    {
+      nombre: "Aperturas en polea",
+      descripcion: "De pie, abrir y cerrar brazos con poleas, manteniendo codos ligeramente flexionados.",
+      material: "Poleas paralelas.",
+      errores: "Codos flexionados en exceso, No juntar las poleas al terminar el movimiento.",
+      video: "Dumbbell Flyes Tutorial",
+      src: "https://www.youtube.com/embed/q1k3bgm-v2A?si=LX2qmWZOh_VvtvTd"
+    },
+    {
+      nombre: "Aperturas en polea (Ascendente)",
+      descripcion: "De pie, abrir y cerrar brazos en forma ascendente con poleas, manteniendo codos ligeramente flexionados.",
+      material: "Poleas paralelas.",
+      errores: "Codos flexionados en exceso, No juntar las poleas al terminar el movimiento.",
+      video: "Dumbbell Flyes Tutorial",
+      src: "https://www.youtube.com/embed/2yAM-xz9Efo?si=4DgKxrGN_sEevijN"
     },
     {
       nombre: "Aperturas con mancuernas",
       descripcion: "Acostado, brazos abiertos hasta niveles del pecho y cerrarlos controladamente.",
       material: "Mancuernas.",
-      errores: "Espalda arqueada, bajada demasiado profunda.",
+      errores: "Espalda arqueada, bajada demasiado profunda, Flexionar en exceso los codos.",
       video: "Dumbbell Flyes Tutorial",
-      src: "https://www.youtube.com/embed/VIDEO_ID_FLYES"
+      src: "https://www.youtube.com/embed/2rzOdnjuYqI?si=IO9eUUAXWC8ZYxLf"
     },
     {
-      nombre: "Flexiones clásicas",
+      nombre: "Flexiones de brazos / Push-ups",
       descripcion: "Push-ups estándar, manos a la altura de pecho y cuerpo alineado.",
       material: "Ninguno.",
       errores: "Caderas caídas, subir por impulso.",
       video: "Push Up Form Tutorial",
-      src: "https://www.youtube.com/embed/VIDEO_ID_PUSH_UP"
+      src: "https://www.youtube.com/embed/0zxZgFJA3ts?si=SxknIu7JjMBMymml"
     },
     {
-      nombre: "Press con mancuernas en suelo",
+      nombre: "Floor Press con mancuernas",
       descripcion: "Press acostado en el suelo para controlar el recorrido.",
       material: "Mancuernas.",
       errores: "Levantar glúteos, no bajar completamente.",
       video: "Floor Press Tutorial",
-      src: "https://www.youtube.com/embed/VIDEO_ID_FLOOR_PRESS"
+      src: "https://www.youtube.com/embed/I8BPykHvU0I?si=s7DCa4QWV3wHM4Nk"
     },
     {
-      nombre: "Cruce en poleas",
-      descripcion: "Juntar manos desde los laterales mediante poleas focalizando pecho.",
-      material: "Poleas media-alta.",
-      errores: "Torso hacia adelante, codos rígidos.",
+      nombre: "Floor Press con barra",
+      descripcion: "Press acostado en el suelo para controlar el recorrido.",
+      material: "Barra.",
+      errores: "Levantar glúteos, no bajar completamente.",
+      video: "Floor Press Tutorial",
+      src: "https://www.youtube.com/embed/6hBSMAjsoeg?si=10Z34pXMBYGrG9U2"
+    },
+    {
+      nombre: "Aperturas en maquina",
+      descripcion: "Sentado, abrir y cerrar brazos en máquina de aperturas, manteniendo codos ligeramente flexionados.",
+      material: "Máquina de aperturas.",
+      errores: "Codos flexionados en exceso, No juntar las manos al terminar el movimiento.",
       video: "Cable Crossover Technique",
-      src: "https://www.youtube.com/embed/VIDEO_ID_CABLE_CROSS"
+      src: "https://www.youtube.com/embed/FDay9wFe5uE?si=UWHeBMWeYA99O43m"
     },
     {
       nombre: "Flexión diamante",
@@ -491,8 +578,16 @@ export const ejerciciosPorCategoria = {
       material: "Ninguno.",
       errores: "Codos hacia afuera, cuerpo no lineal.",
       video: "Diamond Push Up Revisited",
-      src: "https://www.youtube.com/embed/VIDEO_ID_DIAMOND_PECT"
-    }
+      src: "https://www.youtube.com/embed/PJmOZaGnScA?si=mi2CS_b3y1Rkpzdu"
+    },
+    {
+      nombre: "Fondos en paralelas",
+      descripcion: "Descenso controlado entre barras paralelas con carga corporal.",
+      material: "Paralelas.",
+      errores: "Inclinar el tronco exageradamente, codos abiertos.",
+      video: "Dip Parallel Bars Tutorial",
+      src: "https://www.youtube.com/embed/bd-eYgKJUdc?si=JC0lVktehLCswEe2"
+    },
   ],
   core: [
     {
@@ -501,7 +596,7 @@ export const ejerciciosPorCategoria = {
       material: "Ninguno.",
       errores: "Caderas elevadas o hundidas, cuello mal alineado.",
       video: "Forearm Plank Tutorial",
-      src: "https://www.youtube.com/embed/VIDEO_ID_PLANK"
+      src: "https://www.youtube.com/embed/zRElVWcYx_M?si=QUScaJ1ww-W6Grm5"
     },
     {
       nombre: "Plancha lateral",
@@ -509,7 +604,15 @@ export const ejerciciosPorCategoria = {
       material: "Ninguno.",
       errores: "Caderas caídas, hombros adelantados.",
       video: "Side Plank Correct Form",
-      src: "https://www.youtube.com/embed/VIDEO_ID_SIDE_PLANK"
+      src: "https://www.youtube.com/embed/bRivOELQVOs?si=edpFopLjxy1EBiQn"
+    },
+    {
+      nombre: "Plancha lateral dinámica",
+      descripcion: "Apoyado en antebrazo lateral, cuerpo alineado lateralmente. Subir y bajar la cadera de forma controlada.",
+      material: "Ninguno.",
+      errores: "Caderas caídas, hombros adelantados.",
+      video: "Side Plank Correct Form",
+      src: "https://www.youtube.com/embed/WtRo2-kOJ7A?si=e3idGJfeIlg27IsE"
     },
     {
       nombre: "Crunch abdominal",
@@ -517,7 +620,7 @@ export const ejerciciosPorCategoria = {
       material: "Colchoneta.",
       errores: "Tirar del cuello, rebotear.",
       video: "Ab Crunch Tutorial",
-      src: "https://www.youtube.com/embed/VIDEO_ID_CRUNCH"
+      src: "https://www.youtube.com/embed/OsUz898onTE?si=fZNo6Mq970JsdwFA"
     },
     {
       nombre: "Elevación de piernas colgado",
@@ -525,7 +628,15 @@ export const ejerciciosPorCategoria = {
       material: "Barra fija.",
       errores: "Balanceo, arquear espalda.",
       video: "Hanging Leg Raise Guide",
-      src: "https://www.youtube.com/embed/VIDEO_ID_HANGING_LEG_RAISE"
+      src: "https://www.youtube.com/embed/rehzhI1c3Mc?si=vG4Jn6cD3c9HFIep"
+    },
+    {
+      nombre: "Elevación de piernas en espaldar",
+      descripcion: "Con antebrazos apoyados, elevar piernas rectas.",
+      material: "Espaldar de paralelas.",
+      errores: "Balanceo, arquear espalda.",
+      video: "Hanging Leg Raise Guide",
+      src: "https://www.youtube.com/embed/WHEppHwqVUw?si=q_x4L6_hjpPCQ3un"
     },
     {
       nombre: "Russian Twist",
@@ -533,15 +644,31 @@ export const ejerciciosPorCategoria = {
       material: "Mancuerna o disco.",
       errores: "Balancear, no girar desde torso.",
       video: "Russian Twist Tutorial",
-      src: "https://www.youtube.com/embed/VIDEO_ID_RUSSIAN_TWIST"
+      src: "https://www.youtube.com/embed/XkaabzqFPtA?si=DT6YZdj3HUSwz6mo"
     },
     {
-      nombre: "Ab wheel roll-out",
+      nombre: "Roll-out",
       descripcion: "Rodar rueda abdominal hacia adelante manteniendo core activo.",
       material: "Rueda abdominal.",
       errores: "Curve lumbar, rodar sin control.",
       video: "Ab Wheel Rollout Instructions",
-      src: "https://www.youtube.com/embed/VIDEO_ID_AB_WHEEL"
+      src: "https://www.youtube.com/embed/G5KoWoIpqFk?si=j2XNwZIYKmUHPL4v"
+    },
+    {
+      nombre: "Plancha dinámica en fitball",
+      descripcion: "Rodar fitball hacia adelante en posición de plancha manteniendo core activo .",
+      material: "Fitball.",
+      errores: "Curve lumbar, rodar sin control.",
+      video: "Ab Wheel Rollout Instructions",
+      src: "https://www.youtube.com/embed/i98DSyHlLQE?si=x1ZdwWrNi06rhqcF"
+    },
+    {
+      nombre: "Plancha dinámica en fitball con rodillas apoyadas",
+      descripcion: "Rodar fitball hacia adelante en posición de plancha manteniendo core activo .",
+      material: "Fitball.",
+      errores: "Curve lumbar, rodar sin control.",
+      video: "Ab Wheel Rollout Instructions",
+      src: "https://www.youtube.com/embed/pgRxIpQnQc4?si=avBOJTWvm2kvSe87"
     },
     {
       nombre: "Bicicleta abdominal",
@@ -549,7 +676,7 @@ export const ejerciciosPorCategoria = {
       material: "Colchoneta.",
       errores: "Mover cuello, velocidad excesiva.",
       video: "Bicycle Crunch Technique",
-      src: "https://www.youtube.com/embed/VIDEO_ID_BICYCLE_CRUNCH"
+      src: "https://www.youtube.com/embed/uWsb0HmAeY0?si=bWyfhpTeYF5Eghu1"
     },
     {
       nombre: "Plancha con toque de hombro",
@@ -557,7 +684,7 @@ export const ejerciciosPorCategoria = {
       material: "Ninguno.",
       errores: "Rotar cadera, apoyar peso.",
       video: "Shoulder Tap Plank",
-      src: "https://www.youtube.com/embed/VIDEO_ID_SHOULDER_TAP"
+      src: "https://www.youtube.com/embed/sou0wYVd-BM?si=ZDhCHHcS82MJub2p"
     }
   ],
   isquiotibiales: [
