@@ -163,7 +163,7 @@ export const ejerciciosPorCategoria = {
       material: "Banco opcional.",
       errores: "Rotar cadera, no alinear hombros-hombros.",
       video: "Single Leg Glute Bridge",
-      src: "hthttps://www.youtube.com/embed/vdmlNaXSjd4?si=823DVxKZOVSkjWZs"
+      src: "https://www.youtube.com/embed/ff_Bc_k1VQY?si=jj_kJxJRhDXh_10Y"
     },
     {
       nombre: "Patada de glúteo en máquina",
@@ -599,6 +599,20 @@ export const ejerciciosPorCategoria = {
       src: "https://www.youtube.com/embed/zRElVWcYx_M?si=QUScaJ1ww-W6Grm5"
     },
     {
+      nombre: "Kettlebell Swing con rotación",
+      descripcion: "Balanceo explosivo de kettlebell desde cadera con leve rotación de tronco.",
+      material: "Kettlebell",
+      src: "https://www.youtube.com/embed/6-tWaKuAPoU?si=mtXXMXN_oNPHrgnF",
+      errores: ["Usar brazos en exceso", "No activar glúteos"]
+    },
+    {
+      nombre: "TGU",
+      descripcion: "Levantamiento de kettlebell desde el suelo hasta posición de pie con control.",
+      material: "Kettlebell",
+      src: "https://www.youtube.com/embed/sgd8n917Zv0?si=1fVU5-TyCIrrFGCd",
+      errores: ["Usar brazos en exceso", "No activar glúteos"]
+    },
+    {
       nombre: "Plancha lateral",
       descripcion: "Apoyado en antebrazo lateral, cuerpo alineado lateralmente.",
       material: "Ninguno.",
@@ -692,71 +706,78 @@ export const ejerciciosPorCategoria = {
       nombre: "Peso Muerto Rumano con Barra",
       descripcion: "Movimiento de cadera manteniendo rodillas semiflexionadas para trabajar isquiotibiales y glúteos.",
       material: "Barra y discos",
-      src: "https://www.youtube.com/embed/watch?v=2SHsk9AzdjA",
+      src: "https://www.youtube.com/embed/UU6AS_iHPyI?si=s0gJbY7E50lW2PaZ",
       errores: ["Redondear la espalda", "Perder tensión abdominal", "Bajar demasiado rápido"]
     },
     {
       nombre: "Curl Femoral en Máquina",
       descripcion: "Flexionar piernas contra resistencia desde posición extendida.",
       material: "Máquina de curl femoral",
-      src: "https://www.youtube.com/embed/watch?v=ELOCsoDSmrg",
+      src: "https://www.youtube.com/embed/CfTRvTlQFdk?si=CfYeTjxz-Lp6HC5X",
       errores: ["Elevar caderas", "Rebote excesivo"]
     },
     {
-      nombre: "Peso Muerto con Mancuernas",
+      nombre: "Peso Muerto Rumano con Mancuernas",
       descripcion: "Variante del peso muerto rumano usando mancuernas para mayor rango de movimiento.",
       material: "Mancuernas",
-      src: "https://www.youtube.com/embed/watch?v=ytGaGIn3SjE",
+      src: "https://www.youtube.com/embed/ZC3EZH4ICzI?si=Hw9lAzP__tm6vH71",
+      errores: ["Codos bloqueados", "Pérdida de control en la bajada"]
+    },
+    {
+      nombre: "Peso Muerto Rumano Split con Mancuernas",
+      descripcion: "Variante del peso muerto rumano con pies alternados y utilizando mancuernas para mayor rango de movimiento.",
+      material: "Mancuernas",
+      src: "https://www.youtube.com/embed/4ySnSDx0LcU?si=fnmWiNZ9N1Wrdv1N",
       errores: ["Codos bloqueados", "Pérdida de control en la bajada"]
     },
     {
       nombre: "Puente de Glúteos a una Pierna",
       descripcion: "Elevar cadera apoyando una pierna mientras la otra permanece elevada.",
       material: "Ninguno o banda elástica",
-      src: "https://www.youtube.com/embed/watch?v=8bbE64NuDTU",
+      src: "https://www.youtube.com/embed/S0oUDi076k8?si=w0OLF5WvuvLRBy7R",
       errores: ["No activar glúteos", "Apoyar peso en cuello"]
     },
     {
-      nombre: "Nordic Hamstring Curl",
+      nombre: "Curl Nordico",
       descripcion: "Descenso controlado desde rodillas usando fuerza de isquiotibiales.",
       material: "Sujeción para pies",
-      src: "https://www.youtube.com/embed/watch?v=EoRHTW9AHAI",
+      src: "https://www.youtube.com/embed/kjv4WQXWl_A?si=ykYMCmM2VU2kccR9",
       errores: ["Caer bruscamente", "Arquear espalda"]
     },
     {
       nombre: "Buenos Días con Barra",
       descripcion: "Inclinación de tronco hacia adelante manteniendo barra en la espalda alta.",
       material: "Barra",
-      src: "https://www.youtube.com/embed/watch?v=vKPGe8zb2S4",
+      src: "https://www.youtube.com/embed/9vPTRMo29U0?si=hvJ6Afpxb4mUakhv",
       errores: ["Rodillas muy rectas", "Espalda curva"]
     },
     {
       nombre: "Peso Muerto a una Pierna",
       descripcion: "Versión unilateral que mejora equilibrio y fuerza.",
       material: "Mancuerna o kettlebell",
-      src: "https://www.youtube.com/embed/watch?v=0q7xCnlCw0o",
+      src: "https://www.youtube.com/embed/WRmlDXgHT30?si=fhxJLgUnB5VGMB0D",
       errores: ["Rotar cadera", "Perder estabilidad"]
     },
     {
       nombre: "Kettlebell Swing",
       descripcion: "Balanceo explosivo de kettlebell desde cadera.",
       material: "Kettlebell",
-      src: "https://www.youtube.com/embed/watch?v=YSxGGixc9Z0",
+      src: "https://www.youtube.com/embed/1cVT3ee9mgU?si=W5DG2K9tyFF49Ozl",
       errores: ["Usar brazos en exceso", "No activar glúteos"]
     },
     {
       nombre: "Slide Leg Curl",
       descripcion: "Flexión de piernas en posición supina usando discos deslizantes.",
       material: "Discos deslizantes o toallas",
-      src: "https://www.youtube.com/embed/watch?v=LbPNMfA5gZM",
+      src: "https://www.youtube.com/embed/e17hjjvQLQQ?si=q2_1zdZKMzl3Cc4n",
       errores: ["Elevar hombros", "Perder control del movimiento"]
     },
     {
-      nombre: "Estocada hacia atrás con inclinación",
-      descripcion: "Paso atrás con inclinación de tronco para enfatizar isquiotibiales.",
-      material: "Ninguno o mancuernas",
-      src: "https://www.youtube.com/embed/watch?v=MWQdvTqM-M8",
-      errores: ["Dar pasos cortos", "Inclinar espalda de forma incorrecta"]
+      nombre: "Peso muerto unilateral con barra",
+      descripcion: "Peso muerto a una pierna usando barra.",
+      material: "Barra y discos",
+      src: "https://www.youtube.com/embed/XNOWPC48Gvo?si=fOjFS5-YZ9uFw83Y",
+      errores: ["Perder equilibrio", "Espalda redondeada"]
     }
   ],
   gemelos: [
@@ -764,72 +785,30 @@ export const ejerciciosPorCategoria = {
       nombre: "Elevación de Talones de Pie con Barra",
       descripcion: "Elevar talones desde posición erguida manteniendo tensión en gemelos.",
       material: "Barra o máquina",
-      src: "https://www.youtube.com/embed/watch?v=YMmgqO8Jo-k",
+      src: "https://www.youtube.com/embed/1R34gg6bcPA?si=qTOQamuwPopBj9WH",
       errores: ["No alcanzar extensión completa", "Rebotar en la bajada"]
     },
     {
       nombre: "Elevación de Talones Sentado",
       descripcion: "Trabaja principalmente el sóleo en posición sentada.",
       material: "Máquina o peso sobre muslos",
-      src: "https://www.youtube.com/embed/watch?v=8RjS2M3G5eY",
+      src: "https://www.youtube.com/embed/Vu7-2B6HmEA?si=CDGS1Ut0gPEPcwDC",
       errores: ["Movimiento incompleto", "Usar exceso de peso"]
-    },
-    {
-      nombre: "Saltos con Comba",
-      descripcion: "Saltos cortos y rápidos que estimulan gemelos y resistencia.",
-      material: "Comba",
-      src: "https://www.youtube.com/embed/watch?v=1BZMvALa9nM",
-      errores: ["Saltar demasiado alto", "Aterrizar con talones"]
-    },
-    {
-      nombre: "Farmer Walk en Puntillas",
-      descripcion: "Caminar en puntillas cargando peso para forzar gemelos.",
-      material: "Mancuernas o kettlebells",
-      src: "https://www.youtube.com/embed/watch?v=sTk_rhvdmAI",
-      errores: ["Pasos cortos", "No mantener puntillas"]
-    },
-    {
-      nombre: "Sprint en Cuesta",
-      descripcion: "Correr cuesta arriba para mayor activación de gemelos.",
-      material: "Terreno inclinado",
-      src: "https://www.youtube.com/embed/watch?v=KfaXM8f9tw8",
-      errores: ["No inclinar el cuerpo hacia adelante", "Pisar con talón"]
     },
     {
       nombre: "Elevación de Talones Unilateral",
       descripcion: "Versión a una pierna para mayor aislamiento.",
       material: "Ninguno o peso en mano",
-      src: "https://www.youtube.com/embed/watch?v=cZK6wzYrIa0",
+      src: "https://www.youtube.com/embed/Ofpo7di-s-I?si=3dduNhPEPTMFWz5z",
       errores: ["Perder equilibrio", "No completar recorrido"]
-    },
-    {
-      nombre: "Saltos en el Lugar",
-      descripcion: "Saltos repetidos con mínima flexión de rodillas.",
-      material: "Ninguno",
-      src: "https://www.youtube.com/embed/watch?v=LpRk9oCThNQ",
-      errores: ["Usar demasiado las rodillas", "Aterrizar con fuerza excesiva"]
-    },
-    {
-      nombre: "Step-Up con Elevación de Talón",
-      descripcion: "Subir a una superficie y extender talón al máximo.",
-      material: "Banco o cajón",
-      src: "https://www.youtube.com/embed/watch?v=xlwG5Aw1E9c",
-      errores: ["No extender completamente", "Aterrizar fuerte"]
     },
     {
       nombre: "Pliometría de Gemelos",
       descripcion: "Saltos rápidos de baja altura enfocados en elasticidad.",
       material: "Ninguno",
-      src: "https://www.youtube.com/embed/watch?v=6C7fSbxHktA",
+      src: "https://www.youtube.com/embed/5lhaxV7GaGc?si=q5xFEjYNaDAr_mo4",
       errores: ["Saltar muy alto", "Descansar demasiado entre repeticiones"]
     },
-    {
-      nombre: "Carrera en Punta de Pies",
-      descripcion: "Correr distancias cortas en puntillas para trabajar gemelos.",
-      material: "Ninguno",
-      src: "https://www.youtube.com/embed/watch?v=zXn95lo2tq0",
-      errores: ["Inclinarse hacia atrás", "No mantener ritmo constante"]
-    }
   ],
   oly: [
     {
@@ -977,146 +956,167 @@ export const ejerciciosPorCategoria = {
   ],
   estiramientos: [
     {
-      nombre: "Estiramiento de Isquiotibiales de Pie",
+      nombre: "Estiramiento de Isquiotibiales sentado",
       descripcion: "Flexión hacia adelante para estirar parte posterior de piernas.",
       material: "Ninguno",
-      src: "https://www.youtube.com/embed/watch?v=qzKjV0t5E4s",
+      src: "https://www.youtube.com/embed/_d7yEj2DCzU?si=TS3ntX5547TP5gW4",
+      errores: ["Encoger hombros", "Bloquear rodillas en exceso"]
+    },
+    {
+      nombre: "Estiramiento de Isquiotibiales asistido a una pierna",
+      descripcion: "Extensión de la pierna hacía el pecho asistido por una banda para estirar parte posterior de piernas.",
+      material: "Banda elástica o soga",
+      src: "https://www.youtube.com/embed/CLQUOJZlJNM?si=eEMu_UEr8wFhAU60",
       errores: ["Encoger hombros", "Bloquear rodillas en exceso"]
     },
     {
       nombre: "Estiramiento de Psoas en Zancada",
       descripcion: "Estiramiento profundo de flexores de cadera.",
       material: "Ninguno",
-      src: "https://www.youtube.com/embed/watch?v=7z9iI1yG3Uo",
+      src: "https://www.youtube.com/embed/8xZlzcMAtVQ?si=abR4dXJ4fiQFiFQ-",
       errores: ["Hiperextender espalda baja", "No mantener cadera alineada"]
     },
     {
       nombre: "Rotaciones de Columna Torácica",
       descripcion: "Mejora movilidad en la parte media de la espalda.",
       material: "Ninguno",
-      src: "https://www.youtube.com/embed/watch?v=TvZy8p2qQ4E",
+      src: "https://www.youtube.com/embed/iWxGRsCGURM?si=XwsoH61LRvJyZ1SJ",
       errores: ["Hacerlo rápido", "No respirar profundo"]
     },
     {
       nombre: "Estiramiento de Glúteos en el Suelo",
       descripcion: "Estiramiento de glúteos y piriforme cruzando pierna.",
       material: "Ninguno",
-      src: "https://www.youtube.com/embed/watch?v=8aU5kOOBVQs",
+      src: "https://www.youtube.com/embed/C12bTqPVGDs?si=5Wk7shFvkJp8iYzH",
+      errores: ["No relajar músculos", "Postura encorvada"]
+    },
+    {
+      nombre: "Estiramiento de lumbares con rotación",
+      descripcion: "Estiramiento de lumbares acostado en el piso y agregando rotación.",
+      material: "Ninguno",
+      src: "https://www.youtube.com/embed/uxAXs2Vyc7k?si=xUCokpaayOX38oXb",
       errores: ["No relajar músculos", "Postura encorvada"]
     },
     {
       nombre: "Rotaciones de Hombros con Banda",
       descripcion: "Mejora movilidad y activa rotadores externos.",
       material: "Banda elástica",
-      src: "https://www.youtube.com/embed/watch?v=V-0xBe5n2_I",
+      src: "https://www.youtube.com/embed/fljC5LoRqxY?si=wmXwtsaTg8HTjwRi",
       errores: ["No controlar banda", "Mover codo"]
     },
     {
       nombre: "Estiramiento de Pecho en Pared",
       descripcion: "Apertura torácica apoyando brazo en pared.",
       material: "Ninguno",
-      src: "https://www.youtube.com/embed/watch?v=z8vUeH1Tw7Q",
+      src: "https://www.youtube.com/embed/TufwPKlp31w?si=SLiPFLPl5EOPHZYD",
       errores: ["Girar demasiado", "No mantener respiración"]
     },
     {
-      nombre: "Movilidad de Tobillo con Peso",
+      nombre: "Movilidad de Tobillo",
       descripcion: "Desplazar rodilla hacia adelante para ganar movilidad.",
-      material: "Mancuerna o kettlebell",
-      src: "https://www.youtube.com/embed/watch?v=meY6Vr0G8x0",
+      material: "Ninguno o con mancuerna o kettlebell",
+      src: "https://www.youtube.com/embed/vd2VbfJeP64?si=Ur7CWnDkectzo1Ue",
       errores: ["Talón se despega", "No mantener pie alineado"]
     },
     {
       nombre: "Cat-Cow",
       descripcion: "Movilidad de columna alternando flexión y extensión.",
       material: "Ninguno",
-      src: "https://www.youtube.com/embed/watch?v=w1WfQDkZx1I",
+      src: "https://www.youtube.com/embed/LIVJZZyZ2qM?si=maunTUe_ux9dvmLM",
       errores: ["Hacerlo rápido", "No sincronizar respiración"]
     },
     {
       nombre: "Estiramiento de Tríceps",
       descripcion: "Estiramiento estático de tríceps y dorsal.",
       material: "Ninguno",
-      src: "https://www.youtube.com/embed/watch?v=Rkgk6d9cXzI",
+      src: "https://www.youtube.com/embed/C8_twt0ZTcM?si=_HhjP4BA2D3SAAmX",
       errores: ["Inclinarse hacia adelante", "Bloquear respiración"]
     },
     {
       nombre: "Rotaciones de Cadera",
       descripcion: "Ejercicio para liberar y calentar articulaciones de cadera.",
       material: "Ninguno",
-      src: "https://www.youtube.com/embed/watch?v=5tO8bXgFLbU",
+      src: "https://www.youtube.com/embed/tbK5VWjVPvk?si=nO3wagQmBouXud8u",
       errores: ["Movimientos bruscos", "No mantener control"]
     }
   ],
   hiit: [
     {
       nombre: "Sprints en Cinta",
-      descripcion: "Alternar periodos cortos de sprint con descanso activo.",
+      descripcion: "Alternar periodos cortos de sprint de 20s por un descanso de 10s.",
       material: "Cinta de correr",
-      src: "https://www.youtube.com/embed/watch?v=KQhXQSw-HvM",
+      src: "https://www.youtube.com/embed/mM3EBofuNF4?si=ujFVQf1h3lz1Hk36",
       errores: ["No calentar antes", "Parar bruscamente"]
     },
     {
-      nombre: "Sprint en Cuesta",
-      descripcion: "Correr en pendiente para aumentar intensidad.",
-      material: "Terreno inclinado",
-      src: "https://www.youtube.com/embed/watch?v=KfaXM8f9tw8",
-      errores: ["Pasos cortos", "Inclinarse demasiado hacia atrás"]
-    },
-    {
       nombre: "Tabata Jump Squats",
-      descripcion: "Sentadillas con salto siguiendo protocolo 20s trabajo/10s descanso.",
+      descripcion: "Sentadillas con salto siguiendo protocolo 20s trabajo x 10s descanso.",
       material: "Ninguno",
-      src: "https://www.youtube.com/embed/watch?v=U4s4mEQ5VqU",
+      src: "https://www.youtube.com/embed/BRfxI2Es2lE?si=b_JuMGMFGINBfkKv",
       errores: ["No mantener ritmo", "Caer con rigidez"]
     },
     {
       nombre: "Burpee + Sprint",
       descripcion: "Burpee seguido de sprint corto.",
       material: "Ninguno",
-      src: "https://www.youtube.com/embed/watch?v=dZgVxmf6jkA",
+      src: "https://www.youtube.com/embed/wEWuT-2NyeQ?si=MGDnLOCI44Qs3oWV",
       errores: ["No extender completamente", "Arrancar sprint sin control"]
     },
     {
       nombre: "Mountain Climbers Rápidos",
       descripcion: "Ejercicio de core y cardio a alta velocidad.",
       material: "Ninguno",
-      src: "https://www.youtube.com/embed/watch?v=nmwgirgXLYM",
+      src: "https://www.youtube.com/embed/U9OPHAlIicw?si=jjypp7ADD0qxe_3e",
       errores: ["Cadera muy alta", "No llevar rodillas al pecho"]
     },
     {
       nombre: "Kettlebell Swings HIIT",
       descripcion: "Balanceos explosivos en intervalos cortos e intensos.",
       material: "Kettlebell",
-      src: "https://www.youtube.com/embed/watch?v=YSxGGixc9Z0",
+      src: "https://www.youtube.com/embed/RU88iqRVunk?si=gxyFfNpQG_3QXnGh",
       errores: ["Usar brazos en exceso", "No activar glúteos"]
     },
     {
       nombre: "Jumping Lunges HIIT",
       descripcion: "Zancadas con salto a ritmo alto.",
       material: "Ninguno",
-      src: "https://www.youtube.com/embed/watch?v=K2VljzCC16g",
+      src: "https://www.youtube.com/embed/O-rntsAALBo?si=dF7ANhBpDvOi9Trz",
       errores: ["Rodilla hacia adentro", "Caída brusca"]
     },
     {
       nombre: "Battle Ropes",
       descripcion: "Ondas rápidas y potentes con cuerdas pesadas.",
       material: "Cuerdas de batalla",
-      src: "https://www.youtube.com/embed/watch?v=drQN0e28iDQ",
+      src: "https://www.youtube.com/embed/My9KPSz8aCM?si=BBW1z8BjLdLMA2Hn",
       errores: ["Curvar espalda", "Usar solo brazos sin piernas"]
     },
     {
       nombre: "Saltos Laterales sobre Línea",
       descripcion: "Saltos rápidos lado a lado sobre una línea imaginaria.",
       material: "Ninguno",
-      src: "https://www.youtube.com/embed/watch?v=1e2hJ8dwFiY",
+      src: "https://www.youtube.com/embed/1mStIPjEYqA?si=w5WGAFFCRJMr79b3",
       errores: ["No flexionar rodillas", "Pisar línea en vez de saltarla"]
     },
     {
-      nombre: "Shadow Boxing HIIT",
-      descripcion: "Golpes rápidos con pausas cortas.",
+      nombre: "Burpees",
+      descripcion: "Burpees completos con salto y flexión.",
       material: "Ninguno",
-      src: "https://www.youtube.com/embed/watch?v=aBtGth5CwTk",
-      errores: ["No mover pies", "No rotar caderas"]
+      src: "https://www.youtube.com/embed/9Nt5C7dZQt4?si=qQXfThqxVycEolGk",
+      errores: ["No extender completamente", "Hacerlo sin control"]
+    },
+    {
+      nombre: "Devil Burpees",
+      descripcion: "Burpees con mancuernas para mayor intensidad.",
+      material: "Mancuernas",
+      src: "https://www.youtube.com/embed/RfRyJ8xTq2M?si=5KQbKQE-qsEKL3Lb",
+      errores: ["No extender completamente", "Hacerlo sin control"]
+    },
+    {
+      nombre: "Vitalizaciones con disco",
+      descripcion: "Elevaciones explosivas de disco desde posición de flexión hasta que el disco llegue encima de la cabeza.",
+      material: "Disco",
+      src: "https://www.youtube.com/embed/pdbME8Z03Yg?si=MU0Eom7T72WtddCI",
+      errores: ["No extender completamente", "Hacerlo sin control"]
     }
   ]
 };
