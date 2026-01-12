@@ -42,10 +42,30 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <head>
+        {/* Google Analytics */}
+        <Script
+          id="google-analytics"
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-6EEE592R8E"
+          strategy="beforeInteractive"
+        />
+        <Script
+          id="google-analytics-config"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-6EEE592R8E');
+            `,
+          }}
+        />
+
         {/* Google Tag Manager */}
         <Script
           id="google-tag-manager"
-          strategy="afterInteractive"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
